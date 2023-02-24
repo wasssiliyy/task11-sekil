@@ -1,0 +1,152 @@
+﻿<Window x:Class="task11_sekil.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:task11_sekil"
+        mc:Ignorable="d"
+        Title="Task11" Height="450" Width="800">
+    <Grid>
+
+        <Grid Name="ust">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="1">
+                <StackPanel Grid.Column="1">
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontSize="13" FontWeight="DemiBold" Padding="12" Content="REGISTER"></Label>
+                        <Label FontSize="13" FontWeight="DemiBold" Padding="12" Content="LOGIN"></Label>
+                        <Label FontSize="13" FontWeight="DemiBold" Padding="12" Content="ABOUT"></Label>
+                        <Label FontSize="13" FontWeight="DemiBold" Padding="12" Content="FAQ"></Label>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1" >
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Fully" FontSize="35" FontWeight="Bold" FontStyle="Normal"></Label>
+                    <Label Content="Colored" FontSize="35" FontWeight="Bold"></Label>
+                </StackPanel>
+                <WrapPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <Label FontSize="10" Content="Lorem ipsum dolor sit amet, consectetur adipiscing elit," FontWeight="Thin" HorizontalAlignment="Left"/>
+                    <Label FontSize="10" Content="sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud." FontWeight="Thin" HorizontalAlignment="Left"/>
+                    <Label FontSize="10" Content="Ut enim ad minim veniam, quis nostrud." FontWeight="Thin" HorizontalAlignment="Left"/>
+                </WrapPanel>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Canvas VerticalAlignment="Bottom">
+                    <Border Width="142"  Height="28" CornerRadius="200" HorizontalAlignment="Left" Canvas.Left="-10" Canvas.Bottom="70" Canvas.Top="-98">
+                        <Button HorizontalAlignment="Center" BorderThickness="0" FontWeight="Bold" FontSize="20" Content="↓ Download">
+                            <Button.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="Red" Offset="0.3"/>
+                                    <GradientStop Color="#ff3c8e" Offset="0.5"/>
+                                    <GradientStop Color="#e5368c" Offset="0.7"/>
+                                    <GradientStop Color="DeepPink" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+
+                    </Border>
+                </Canvas>
+            </Grid>
+
+            <Canvas Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                <Rectangle Width="75" Height="300" RadiusX="30" RadiusY="30">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#ff3c74" Offset="0" />
+                            <GradientStop Color="#ff3c74" Offset="0.1" />
+                            <GradientStop Color="#ff3c8e" Offset="0.5" />
+                            <GradientStop Color="#e5368c" Offset="1" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                    <Rectangle.RenderTransform>
+                        <RotateTransform Angle="40"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Canvas>
+            <Canvas Grid.Row="1" Grid.Column="1">
+                <Rectangle Width="75" Height="600" RadiusX="30" RadiusY="30" Canvas.Left="-271" Canvas.Top="-61" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                            <GradientStop Color="Red" Offset="0" />
+                            <GradientStop Color="DarkRed" Offset="0.3" />
+                            <GradientStop Color="#e5368c" Offset="0.7" />
+                            <GradientStop Color="#e5368c" Offset="1" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                    <Rectangle.RenderTransform>
+                        <RotateTransform Angle="40"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Canvas>
+            <Canvas Grid.Row="1" Grid.Column="1">
+                <Rectangle Panel.ZIndex="40" Width="75" Height="600" RadiusX="30" RadiusY="30" Canvas.Left="-410" Canvas.Top="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                            <GradientStop Color="Purple" Offset="0" />
+                            <GradientStop Color="#e5368c" Offset="0.3" />
+                            <GradientStop Color="#e5368c" Offset="0.7" />
+                            <GradientStop Color="Purple" Offset="1" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                    <Rectangle.RenderTransform>
+                        <RotateTransform Angle="40"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Canvas>
+            <Canvas Grid.Row="1" Grid.Column="1">
+                <Rectangle Panel.ZIndex="40" Width="75" Height="600" RadiusX="30" RadiusY="30" Canvas.Left="-244" Canvas.Top="9" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                            <GradientStop Color="Aqua" Offset="0" />
+                            <GradientStop Color="#e5368c" Offset="0.3" />
+                            <GradientStop Color="#e5368c" Offset="0.7" />
+                            <GradientStop Color="Purple" Offset="1" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                    <Rectangle.RenderTransform>
+                        <RotateTransform Angle="40"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Canvas>
+            <Canvas Grid.Row="1" Grid.Column="1">
+                <Rectangle Width="75" Height="600" RadiusX="30" RadiusY="30" Canvas.Left="-132" Canvas.Top="70" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                            <GradientStop Color="Red" Offset="0" />
+                            <GradientStop Color="Purple" Offset="0.3" />
+                            <GradientStop Color="#e5868c" Offset="0.7" />
+                            <GradientStop Color="Purple" Offset="1" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                    <Rectangle.RenderTransform>
+                        <RotateTransform Angle="40"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Canvas>
+            <Canvas Grid.Row="1" Grid.Column="1">
+                <Rectangle Panel.ZIndex="1" Width="75" Height="600" RadiusX="30" RadiusY="30" Canvas.Left="-226" Canvas.Top="80" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                            <GradientStop Color="Purple" Offset="0" />
+                            <GradientStop Color="#e5368c" Offset="0.3" />
+                            <GradientStop Color="#e5368c" Offset="0.7" />
+                            <GradientStop Color="Purple" Offset="1" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                    <Rectangle.RenderTransform>
+                        <RotateTransform Angle="40"/>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Canvas>
+        </Grid>
+    </Grid>
+</Window>
